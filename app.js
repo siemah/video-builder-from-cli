@@ -4,8 +4,8 @@ var ffmpeg = require('fluent-ffmpeg');
 ffmpeg.setFfmpegPath(ffmpegPath);
 var command = ffmpeg();
 var timemark = null;
-const image = "bg.jpeg";
-const audio = "untitled.wav";
+const image = `${__dirname}/assets/bg.jpeg`;
+const audio = `${__dirname}/assets/untitled.wav`;
 
 // ffmpeg.getAvailableEncoders(function (err, encoders) {
 //   console.log('Available formats:');
@@ -23,7 +23,7 @@ command
   // .audioCodec('ac3')
   // .outputFPS(24)
   // .videoCodec('mpeg4')
-  .output('output-1920x1080.mp4')
+  .output(`${__dirname}/videos/output-1920x1080-v3.mp4`)
   // .videoBitrate('10000k')
   // .aspect('16:9')
   .on('end', onEnd)
