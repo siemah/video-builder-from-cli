@@ -3,7 +3,15 @@ var ffmpeg = require('fluent-ffmpeg');
 var videoshow = require('videoshow')
 
 let _timemark;
-
+const _vo = {
+  videoCodec: 'libx264',
+  fps: 25,
+  videoBitrate: 1024,
+  videoCodec: 'libx264',
+  audioBitrate: '128k',
+  format: 'mp4',
+  pixelFormat: 'yuv420p'
+};
 (async () => {
   console.log('convert wav to mp3')
   const _time = Date.now();
@@ -40,7 +48,7 @@ function createVideo(imagePath, audioPath, videoPath) {
   return new Promise((resolve, reject) => {
     var images = [imagePath];
 
-    videoshow(images)
+    videoshow(images,_vo)
       .audio(audioPath)
       .save(videoPath)
       .on('start', function (command) {
