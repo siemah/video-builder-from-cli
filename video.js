@@ -30,7 +30,7 @@ module.exports = function createVideo(imagePath, audioPath, videoPath) {
       .audioCodec('aac')
       .audioBitrate('128k')
       .outputFPS(25)
-      .videoCodec('mpeg4')
+      // .videoCodec('mpeg4')
       // .videoBitrate('10000k')
       .aspect('16:9')
       .output(videoPath)
