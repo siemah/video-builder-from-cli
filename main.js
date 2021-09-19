@@ -20,9 +20,9 @@ function wav2mp3(sourcePath, distinationPath) {
 
 (async function () {
   const imagePath = `${__dirname}/assets/bg.jpeg`;
-  const sourceAudio = `${__dirname}/assets/untitled.wav`;
+  const sourceAudio = `${__dirname}/audio.wav`;
   const audioPath = `${__dirname}/converter.mp3`
-  const videoPath = `${__dirname}/output.mp4`
+  const videoPath = `${__dirname}/output.avi`
   try {
     await wav2mp3(sourceAudio, audioPath);
     console.log('video created')

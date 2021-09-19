@@ -2,8 +2,8 @@ const videoshow = require('videoshow')
 const images = [`${__dirname}/assets/bg.jpeg`]
 
 videoshow(images)
-  .audio(`${__dirname}/audio.wav`, {fade:true})
-  .save('example-video.mp4')
+  .audio(`${__dirname}/converter.mp3`, {fade:true})
+  .save('example-video.avi')
   .on('start', function (command) {
     console.log('ffmpeg process started:', command)
   })
