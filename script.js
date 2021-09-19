@@ -4,10 +4,12 @@ var videoshow = require('videoshow')
 
 let _timemark;
 const _vo = {
-  videoCodec: 'libx264',
   fps: 25,
+  size: '640x?',
   videoBitrate: 1024,
   videoCodec: 'libx264',
+  loop: 1,
+  captionDelay: 1000,
   audioBitrate: '128k',
   format: 'mp4',
   pixelFormat: 'yuv420p'

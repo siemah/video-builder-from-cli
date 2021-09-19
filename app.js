@@ -18,7 +18,7 @@ const audio = `${__dirname}/assets/untitled.wav`;
 command
   .input(image)
   .inputFPS(1 / 6)
-  .input(`${__dirname}/converter-1632055294216.mp3`)
+  .input(`${__dirname}/converter-1632059860951.mp3`)
   .audioBitrate('384k')
   // .audioCodec('ac3')
   // .outputFPS(24)
